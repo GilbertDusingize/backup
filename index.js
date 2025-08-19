@@ -23,11 +23,25 @@ app.get("/about",(req,res)=>{
 app.get("/contact",(req,res)=>{
     res.render("contact.ejs");
 });
-//coment
-app.get("/coment",(req,res)=>{
-    res.render("coment.ejs");
+//update
+app.get("/edit/:id", (req, res) => {
+  const id = req.params.id;
+  const post = posts[id];   // posts should be an array
+  if (!post) {
+    return res.status(404).send("Post not found");
+  }
+  res.render("edit.ejs", { post: post, id: id });
 });
 
+//Handle updeted post
+app.post("/update/:id", (req, res) => {
+  const id = req.params.id;
+  posts[id] = {
+    title: req.body.title,
+    content: req.body.content
+  };
+  res.redirect("/");
+});
 
 app.post("/create", (req, res) => {
     const {title,content}= req.body;
