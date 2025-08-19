@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <!--swipper link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!--Header /Navbar section-->>
+    <header>
+       <nav class="navbar section-content">
+           <a href="#" class="nav-logo">
+             <h2 class="logo-text"><img src="images/logo.png" id="img1">Coffee</h2>
+           </a>
+           <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+               <li class="menu-item"> <a href="#home" class="nav-link">Home</a></li>
+               <li class="menu-item"> <a href="#about" class="nav-link">About</a></li>
+               <li class="menu-item"> <a href="#menu" class="nav-link">Menu</a></li>
+               <li class="menu-item"> <a href="#testimonial" class="nav-link">Testimonials</a></li>
+               <li class="menu-item"> <a href="#garelly" class="nav-link">Garelly</a></li>
+               <li class="menu-item"> <a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+   
+    <main>
+           <!--Hero section-->
+           <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffe</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Wellcome to our coffe paradise,where every bean tells a story and every cup sparks joy.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact">Contact</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img class="img-fluid" src="images/herro.jpg" alt="hero-image-wrapper">
+                </div>
+            </div>
+
+           </section>
+           <!--About section-->
+           <section class="about-section" id="about">
+               <div class="section-content">
+            
+                    <div class="about-image-wrapper">
+                         <img src="images/about1.jpg" alt="about" class="about-image" >
+                    </div> 
+                    <div class="about-details">
+                        <h2 class="section-title">ABOUT US</h2>
+                        <p class="text">Maraba  in Huye,Butare,we pride ourselves on being a go - to destination for coffee lovers and 
+                            conversation seekers alike .We're dedicated to providing an exceptional coffee experience in a cozy and 
+                            inviting atmosphere ,where guest can relax unwind and enjoy their time in confort.
+                        </p>
+                        <div class="social-links-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                             <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                    </div>            
+                </div>
+            </section>
+<!--Menu section-->
+            <section class="menu-section" id="menu">
+                <h2 class="section-title">our menu</h2>
+                <div class="section-content">
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <img src="images/hero.jfif" alt="hot beverage" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Hot beverage</h3>
+                                 <p class="text">Wide range of </br> steaming hot coffee</br>
+                                     to make you</br> fresh and light</p>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="images/m3.jfif" alt="cold beverage" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Refreshment</h3>
+                                 <p class="text">Your favorite eating</br> and drinking </br>combination</p>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="images/m2.jfif" alt="cold beverage" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Cold beverage</h3>
+                                 <p class="text">Creamy and frothy</br> cold coffee </br>to make you cool</p>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="images/com.jpg" alt="combos" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Spcial combos</h3>
+                                 <p class="text">Your favorite eating </br>and drinking combination</p>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="images/m5.jfif" alt="dessrt" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Dessert</h3>
+                                 <p class="text">Satate your palate</br> and take you </br>on culinary traet</p>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <img src="images/m6.jfif" alt="burger" class="menu-image">
+                       
+                            <div class="menu-details">
+                                 <h3 class="name">Burger</h3>
+                                 <p class="text">Quick bites to satisfy </br>your small size </br>bugger</p>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </section>
+            <!--Testimonial section-->
+            <section class="testimonials-section" id="testimonial">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="carousel">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w1.jfif" alt="user1" class="user-image">
+                                    <h3 class="name">Kabano Anatole</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w11.jfif" alt="user1" class="user-image">
+                                    <h3 class="name">Gaju Fildous</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w3.jfif" alt="user1" class="user-image">
+                                    <h3 class="name">Blandine Kandolo</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w55.jfif" alt="user1" class="user-image">
+                                    <h3 class="name">Milliam Kagoyire</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w4444.jpg" alt="user1" class="user-image">
+                                    <h3 class="name">Khurn Amina</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w66.jpg" alt="user1" class="user-image">
+                                    <h3 class="name">Akimana Ratifa</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w7.jfif" alt="user1" class="user-image">
+                                    <h3 class="name">Bahizi Geofre</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w88.jpg" alt="user1" class="user-image">
+                                    <h3 class="name">Kalima Gregoire</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="images/w99.jpg" alt="user1" class="user-image">
+                                    <h3 class="name">Musa Diawara</h3>
+                                    <i class="feedback">Love Maraba coffee .Parfectly balanced and rich.Will order again</i>
+                                </li>
+                                
+                            </ul>
+                               <div class="swiper-pagination"></div>
+                              <!-- <div class="swiper-pagination-bullet"></div>-->
+                               <div class="swiper-slide-button swiper-button-prev"></div>
+                              <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--Garelly section-->
+            <section class="garelly-section" id="garelly">
+                <h2 class="section-title">Garelly</h2>
+                <div class="section-content">
+                    <ul class="garelly-list">
+                        <li class="garelly-item">
+                            <img src="images/c11.jfif"alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c2.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c3.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c44.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c555.jpg" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c6.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c7.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c8.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c9.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c10.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c111.jfif" alt="garelly" class="garelly-image">
+                        </li>
+                        <li class="garelly-item">
+                            <img src="images/c12.jfif" alt="garelly" class="garelly-image">
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+       <!--Contact section-->
+             <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact us</h2>
+       <div class="section-content">
+        <ul class="contact-info-list">
+            <li class="contact-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <p>123 Campsite Avenue,Wilderness,CA 98765</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@ktss.rw</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-phone"></i>
+                <p>+2507888666777</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-clock"></i>
+                <p>Monday-Friday 9:00 AM -5:00PM</p>
+            </li>
+            <li class="contact-info">
+                <i class="fa-solid fa-clock"></i>
+                <p>Sunday: Closed</p>
+            </li>
+        </ul>
+        <form action="#" class="contact-form">
+            <input type="text" placeholder="Your names" class="form-input" required>
+             <input type="email" placeholder="Your email" class="form-input" required>
+             <textarea placeholder="Your message" class="form-input" required></textarea>
+             <button class="submit-button">Submit</button>
+
+        </form>
+          
+       </div>
+             </section>
+       <!--footer section-->
+             <footer class="footer-section" id="home">
+        <div class="section-content">
+               <div class="back"> <a href="#home">Back Home</a> </div>
+            <p class="copyright-text">&copy; 2024 coffee shop</p>
+
+            <div class="social-link-list">
+                 <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">*</a></span>
+                <a href="#" class="policy-link">Refund policy</a>
+            </p>
+
+        </div>
+            </footer>
+    </main>
+    <!--Link swiper script-->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="coffee.js"></script>
+</body>
+</html>
