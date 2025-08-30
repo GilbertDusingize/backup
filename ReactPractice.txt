@@ -1,0 +1,95 @@
+1.HEADING
+import React from "react";
+//Create heading filie
+function Heading() {
+  let currentHour = new Date().getHours();
+  let now = new Date();
+  let greeting = "";
+  let objectStyle = { color: "" };
+  //display greeting based on getHours
+  if (currentHour < 12) {
+    greeting = "Goodmorning!";
+    objectStyle.color = "Red";
+  } else if (currentHour < 18) {
+    greeting = "Good Afternoon!";
+    objectStyle.color = "Green";
+  } else {
+    greeting = "Good night!";
+    objectStyle.color = "blue";
+  }
+  return (
+    <div>
+      <h1>It is {now.toLocaleTimeString()}</h1>
+      <h1 style={objectStyle}>{greeting}</h1>
+    </div>
+  );
+}
+export default Heading;
+2.APP
+import React from "react";
+import Heading from "./Heading";
+//create App function
+function App() {
+  return (
+    <div>
+      <Heading />
+    </div>
+  );
+}
+export default App;
+3.INDEX
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+//display App filie
+ReactDOM.render(<App />, document.getElementById("root"));
+4.FOOD
+import React from "react";
+function Food(){
+
+const names = ["Gilbert", "General", "Paul", "Eulade"];
+function whoPay() {
+  let numberOfPeople = names.length;
+  let randomPersonPosition = Math.floor(Math.random() * names.length);
+  let randomPerson = names[randomPersonPosition];
+  return randomPerson;
+}
+
+let person = whoPay();
+return(<div>{console.log(person + " is going to pay!")}</div>);
+}
+export default Food;
+5.FOOD2
+import React from "react";
+function Food() {
+  const names = ["Gilbert", "General", "Paul", "Eulade"];
+  function whoPay() {
+    let numberOfPeople = names.length;
+    let randomPersonPosition = Math.floor(Math.random() * names.length);
+    let randomPerson = names[randomPersonPosition];
+    return randomPerson;
+  }
+
+  let person = whoPay();
+  let currentHour = new Date().getHours();
+  let objectStyle = { color: "" };
+  let meal = "";
+  if (currentHour < 12) {
+    meal = "Breakfast!";
+    objectStyle.color = "Red";
+  } else if (currentHour < 18) {
+    meal = "Lunch!";
+    objectStyle.color = "Green";
+  } else {
+    meal = "Super!";
+    objectStyle.color = "blue";
+  }
+  return (
+    <div>
+      <h2 style={objectStyle}>
+        {person} is going to pay {meal}
+      </h2>
+    </div>
+  );
+}
+export default Food;
